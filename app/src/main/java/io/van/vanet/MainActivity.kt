@@ -2,6 +2,7 @@ package io.van.vanet
 
 import android.app.Activity
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.webkit.WebViewClient
@@ -15,28 +16,38 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val html = """
-            <!DOCTYPE html>
-            <html>
-                <head>
-                    <meta charset="utf-8">
-                    <title>VaNet</title>
-                </head>
-                <body>
-                    <a href="https://cn.bing.com">Bing.com</a>
-                </body>
-            </html>
-        """.trimIndent()
+        // detect the screen ratio to 1920, which will make the scaled screen to looks like 1920.
+        val dm = resources.displayMetrics
+        val screenWidth = dm.widthPixels
+        val screenHeight = dm.heightPixels
 
-        val loadUrl = "https://cn.bing.com"
+        val ratio = screenWidth / 1920.0
 
+        Log.d("VaNet", "Screen $screenWidth x $screenHeight, Ratio = $ratio")
+
+//        val html = """
+//            <!DOCTYPE html>
+//            <html>
+//                <head>
+//                    <meta charset="utf-8">
+//                    <title>VaNet</title>
+//                </head>
+//                <body>
+//                    <a href="https://cn.bing.com">Bing.com</a>
+//                </body>
+//            </html>
+//        """.trimIndent()
+
+//        val loadUrl = "https://cn.bing.com"
+
+        // fake the PC userAgent String
         browser.settings.userAgentString = "Mozilla/5.0 (Linux; U; Android 3.0; en-us; Xoom Build/HRI39) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13"
         browser.settings.loadWithOverviewMode = true
 //        browser.settings.useWideViewPort = true //don't set this, it will scale the screen.
         browser.settings.javaScriptEnabled = true
         browser.settings.setGeolocationEnabled(true)
 
-        browser.setInitialScale(100)
+        browser.setInitialScale((100 * ratio).toInt())
         browser.webViewClient = WebViewClient()
 
         try {

@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <title>VaNet</title>
     <style type="text/css">
-.search_controls {
+.address_controls {
     display: inline-block;
 }
-    body .b_searchboxForm {
+    body .v_searchboxForm {
     background-color: #fff;
     border: 1px #ccc solid;
     padding: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,.3);
 }
-.b_searchboxForm {
+.v_searchboxForm {
     position: relative;
     display: inline-block;
 }
 
-body .b_searchbox {
+body .v_searchbox {
     background-color: #fff;
     margin: 6px 1px 0 10px;
     width: 486px;
@@ -26,7 +26,7 @@ body .b_searchbox {
     padding-right: 4px;
 }
 
-.b_searchbox {
+.v_searchbox {
     width: 490px;
     margin: 2px 0 3px 12px;
     border: 0;
@@ -42,7 +42,7 @@ body .b_searchbox {
     font-size: 16px;
 }
 
-body .b_searchboxForm .b_searchboxSubmit {
+body .v_searchboxForm .v_searchboxSubmit {
     height: 45px;
     width: 45px;
     border: 8px solid #fff;
@@ -52,7 +52,7 @@ body .b_searchboxForm .b_searchboxSubmit {
     vertical-align: top;
 }
 
-.b_searchboxSubmit {
+.v_searchboxSubmit {
     text-indent: -99em;
     position: static;
     right: 0;
@@ -70,10 +70,10 @@ input {
 <body>
 <div align="center">
 
-    <div class="search_controls">
+    <div class="address_controls">
         <form id="go_form" class="sw_box">
-            <div class="b_searchboxForm" data-bm="16">
-                <input class="b_searchbox" id="go_form_q" name="q"
+            <div class="v_searchboxForm" data-bm="16">
+                <input class="v_searchbox" id="go_form_q" name="q"
                        title="Enter your search term" type="text"
                        value="" maxlength="100" autocapitalize="off"
                        autocorrect="off" autocomplete="off"
@@ -82,7 +82,7 @@ input {
                        placeholder="Enter URL http:// or https://"
                 >
                 <input type="submit"
-                       class="b_searchboxSubmit"
+                       class="v_searchboxSubmit"
                        id="go_form_go"
                        title="Search"
                        tabindex="-1"
