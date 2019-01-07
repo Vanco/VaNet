@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+.address_controls {
+    display: inline-block;
+}
+    body .v_searchboxForm {
+    background-color: #fff;
+    border: 1px #ccc solid;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+.v_searchboxForm {
+    position: relative;
+    display: inline-block;
+}
+
+body .v_searchbox {
+    background-color: #fff;
+    margin: 6px 1px 0 10px;
+    width: 486px;
+    border-right: 0;
+    padding-right: 4px;
+}
+
+.v_searchbox {
+    width: 490px;
+    margin: 2px 0 3px 12px;
+    border: 0;
+    padding: 0 10px 0 0;
+    max-height: 30px;
+    outline: none;
+    -webkit-appearance: none;
+    border-right: 1px solid;
+    border-color: #ccc;
+    box-sizing: content-box;
+    position: relative;
+    height: 40px;
+    font-size: 16px;
+}
+
+body .v_searchboxForm .v_searchboxSubmit {
+    height: 45px;
+    width: 45px;
+    border: 8px solid #fff;
+    background: #fff url(hpc26.png) no-repeat;
+    background-position: -169px -63px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.v_searchboxSubmit {
+    text-indent: -99em;
+    position: static;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+input {
+    font: inherit;
+    font-size: 100%;
+    border-radius: 0;
+}
+
+.v_bookmark {
+    padding: 30px;
+    background-color: #dcddde;
+}
+
+.v_bookmark a {
+
+}
+
+nav ul {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}

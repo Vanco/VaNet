@@ -3,100 +3,34 @@
 <head>
     <meta charset="utf-8">
     <title>VaNet</title>
-    <style type="text/css">
-.address_controls {
-    display: inline-block;
-}
-    body .v_searchboxForm {
-    background-color: #fff;
-    border: 1px #ccc solid;
-    padding: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,.3);
-}
-.v_searchboxForm {
-    position: relative;
-    display: inline-block;
-}
-
-body .v_searchbox {
-    background-color: #fff;
-    margin: 6px 1px 0 10px;
-    width: 486px;
-    border-right: 0;
-    padding-right: 4px;
-}
-
-.v_searchbox {
-    width: 490px;
-    margin: 2px 0 3px 12px;
-    border: 0;
-    padding: 0 10px 0 0;
-    max-height: 30px;
-    outline: none;
-    -webkit-appearance: none;
-    border-right: 1px solid;
-    border-color: #ccc;
-    box-sizing: content-box;
-    position: relative;
-    height: 40px;
-    font-size: 16px;
-}
-
-body .v_searchboxForm .v_searchboxSubmit {
-    height: 45px;
-    width: 45px;
-    border: 8px solid #fff;
-    background: #fff url(hpc26.png) no-repeat;
-    background-position: -169px -63px;
-    overflow: hidden;
-    vertical-align: top;
-}
-
-.v_searchboxSubmit {
-    text-indent: -99em;
-    position: static;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-}
-
-input {
-    font: inherit;
-    font-size: 100%;
-    border-radius: 0;
-}
-    </style>
+    <link rel="stylesheet" type="text/css" href="v.css">
 </head>
 <body>
-<div align="center">
-
-    <div class="address_controls">
-        <form id="go_form" class="sw_box">
-            <div class="v_searchboxForm" data-bm="16">
-                <input class="v_searchbox" id="go_form_q" name="q"
-                       title="Enter your search term" type="text"
-                       value="" maxlength="100" autocapitalize="off"
-                       autocorrect="off" autocomplete="off"
-                       spellcheck="false"
-                       onchange="document.getElementById('go_form').action = this.value;"
-                       placeholder="Enter URL http:// or https://"
-                >
-                <input type="submit"
-                       class="v_searchboxSubmit"
-                       id="go_form_go"
-                       title="Search"
-                       tabindex="-1"
-                       name="go">
-            </div>
-        </form>
-        <div align="left">
-            <ul>
-                <li><a href="https://cn.bing.com">Bing.com</a></li>
-            </ul>
-        </div>
-    </div>
-
-
+<div>
+    <nav>
+        <ul class="v_bookmark">
+            <li class="address_controls">
+                <form id="go_form" name="searchForm" action="" onsubmit="searchForm.action = searchForm.q.value">
+                    <div class="v_searchboxForm" data-bm="16">
+                        <input class="v_searchbox" id="go_form_q" name="q"
+                               title="Enter your search term" type="url"
+                               value="" maxlength="100" autocapitalize="off"
+                               autocorrect="off" autocomplete="off"
+                               spellcheck="false"
+                               placeholder="Enter URL">
+                        <input type="submit"
+                               class="v_searchboxSubmit"
+                               id="go_form_go"
+                               title="Search"
+                               tabindex="-1"
+                               name="go">
+                    </div>
+                </form>
+            </li>
+            <li><a href="http://ota.aerozhonghuan.com:20002/platform-health/#/bigScreen">中寰卫星平台健康监测系统</a></li>
+            <li><a href="https://www.bing.com">Bing.com</a></li>
+        </ul>
+    </nav>
 
 
 </div>
