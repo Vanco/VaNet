@@ -49,7 +49,6 @@ class MainActivity : Activity() {
         browser.settings.displayZoomControls = true
 
         browser.settings.mediaPlaybackRequiresUserGesture = true
-        browser.settings.saveFormData = true
 
         browser.requestFocusFromTouch()
 
