@@ -48,7 +48,7 @@ class MainActivity : Activity() {
         browser.settings.builtInZoomControls = true
         browser.settings.displayZoomControls = true
 
-        browser.settings.mediaPlaybackRequiresUserGesture = true
+        browser.settings.mediaPlaybackRequiresUserGesture = false
 
         browser.requestFocusFromTouch()
 
