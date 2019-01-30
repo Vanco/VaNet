@@ -6,8 +6,12 @@ import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.webkit.WebChromeClient
+import android.webkit.WebView
 import android.webkit.WebViewClient
 import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Toast
+
+
 
 
 class MainActivity : Activity() {
